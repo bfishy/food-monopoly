@@ -138,7 +138,7 @@ body {
 
 .chance__header h2 {
   color: #FFF;
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
@@ -150,14 +150,14 @@ body {
 
 .chance__body h3 {
   color: var(--dark);
-  font-size: 24px;
+  font-size: 12px;
   font-weight: 600;
   margin-bottom: 15px;
 }
 
 .chance__body p {
   color: var(--dark);
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.4;
 }
 
