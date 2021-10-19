@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Monopoly</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    
+  <div class="flexcontainer">
+
+  <div class="cards">
+    <div class="chance">
+      <div class="chance__inner">
+        <div class="chance__face chance__face--front">
+          <h2>CHANCE</h2>
+        </div>
+        <div class="chance__face chance__face--back">
+          <div class="chance__content">
+            <div class="chance__header">
+              <img src="pp.jpg" alt="" class="pp" />
+              <h2>CHANCE</h2>
+            </div>
+            <div class="chance__body">
+              <h3>ADVANCE TO GO!</h3>
+              <p>Head straight to GO and collect £200</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chest">
+      <div class="chest__inner">
+        <div class="chest__face chest__face--front">
+          <h2>COMMUNITY CHEST</h2>
+        </div>
+        <div class="chest__face chest__face--back">
+          <div class="chest__content">
+            <div class="chest__header">
+              <img src="pp.jpg" alt="" class="pp" />
+              <h2>COMMUNITY CHEST</h2>
+            </div>
+            <div class="chest__body">
+              <h3>GET OUT OF JAIL FREE</h3>
+              <p>This card may be kept until needed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+
+    <script>
+      function calcNumbers(result){
+      form.displayResult.value=form.displayResult.value+result;
+      
+      }
+      </script>
+      <div class="container">
+      <form name="form">
+      <div class="display">
+      <input type="text" placeholder="0" name="displayResult" />
+      </div>
+      <div class="buttons">
+        <div class="row">
+      <input type="button" name="b7" value="7" onClick="calcNumbers(b7.value)">
+        <input type="button" name="b8" value="8" onClick="calcNumbers(b8.value)">
+        <input type="button" name="b9" value="9" onClick="calcNumbers(b9.value)">
+        <input type="button" name="addb" value="+" onClick="calcNumbers(addb.value)">
+      </div>
+      
+      <div class="row">
+      <input type="button" name="b4" value="4" onClick="calcNumbers(b4.value)">
+        <input type="button" name="b5" value="5" onClick="calcNumbers(b5.value)">
+        <input type="button" name="b6" value="6" onClick="calcNumbers(b6.value)">
+        <input type="button" name="subb" value="-" onClick="calcNumbers(subb.value)">
+      </div>
+      
+      <div class="row">
+      <input type="button" name="b1" value="1" onClick="calcNumbers(b1.value)">
+        <input type="button" name="b2" value="2" onClick="calcNumbers(b2.value)">
+        <input type="button" name="b3" value="3" onClick="calcNumbers(b3.value)">
+        <input type="button" name="mulb" value="×" onClick="calcNumbers(mulb.value)">
+      </div>
+      
+      <div class="row">
+      <input type="button" name="b0" value="0" onClick="calcNumbers(b0.value)">
+        <input type="button" name="potb" value="." onClick="calcNumbers(potb.value)">
+        <input type="button" name="divb" value="÷" onClick="calcNumbers(divb.value)">
+        <input type="button" class="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+      </div>
+      </div>
+      
+      </form>
+      </div>
+
+    <div class="set">
+      <div class="dice">
+      <!-- <ol class="die-list even-roll" data-roll="1" id="die-1">
+        <li class="die-item" data-side="1">
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="2">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="3">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="4">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="5">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="6">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+      </ol> -->
+      <ol class="die-list odd-roll" data-roll="1" id="die-2">
+        <li class="die-item" data-side="1">
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="2">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="3">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="4">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="5">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+        <li class="die-item" data-side="6">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </li>
+      </ol>
+    </div>
+    <div class="button">
+    <button type="button" id="roll-button">Roll Dice</button>
+    <script src="./app.js"></script>
+  </div>
+</div>
+  </div>
+</body>
+</html>
